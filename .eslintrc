@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "teerohr-typescript"
+  ],
+  "parser": "typescript",
+  "env": {
+    "jest": true,
+    "es6": true
+  }
+}

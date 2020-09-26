@@ -1,0 +1,66 @@
+{
+  "name": "tpm",
+  "version": "1.0.0",
+  "description": "npm cli wrapper to auto-install typings with packages",
+  "keywords": [],
+  "homepage": "https://github.com/tEErohr/tpm#readme",
+  "bugs": {
+    "url": "https://github.com/tEErohr/tpm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tEErohr/tpm.git"
+  },
+  "license": "ISC",
+  "author": "Matthias Buchholz",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "tpm": "./bin/run"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "postpack": "rm -f oclif.manifest.json",
+    "test": "echo NO TESTS",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "@types/node-fetch": "^2.5.7",
+    "node-fetch": "^2.6.1",
+    "registry-url": "^5.1.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^10",
+    "eslint": "^5.13",
+    "eslint-config-teerohr-typescript": "tEErohr/eslint-config-teerohr-typescript",
+    "globby": "^10",
+    "jest": "^26.4.2",
+    "search-npm-registry": "^2.0.3",
+    "ts-jest": "^26.4.0",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "tpm",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  }
+}

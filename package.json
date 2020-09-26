@@ -27,7 +27,7 @@
   "scripts": {
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "postpack": "rm -f oclif.manifest.json",
-    "test": "echo NO TESTS",
+    "test": "jest",
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "version": "oclif-dev readme && git add README.md"
   },

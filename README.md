@@ -4,9 +4,7 @@ tpm
 npm cli wrapper to auto-install typings with packages
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/tpm.svg)](https://npmjs.org/package/tpm)
-[![Downloads/week](https://img.shields.io/npm/dw/tpm.svg)](https://npmjs.org/package/tpm)
-[![License](https://img.shields.io/npm/l/tpm.svg)](https://github.com/[object Object]/blob/master/package.json)
+[![License](https://img.shields.io/npm/l/tpm.svg)](https://github.com/tEErohr/tpm/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)

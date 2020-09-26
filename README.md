@@ -28,43 +28,16 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`tpm hello [FILE]`](#tpm-hello-file)
-* [`tpm help [COMMAND]`](#tpm-help-command)
+* [`tpm lookup [PACKAGES...]`](#tpm-lookup-file)
 
-## `tpm hello [FILE]`
+## `tpm lookup [packageNames...]`
 
-describe the command here
-
-```
-USAGE
-  $ tpm hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ tpm hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/tEErohr/tpm/blob/v1.0.0/src/commands/hello.ts)_
-
-## `tpm help [COMMAND]`
-
-display help for tpm
+return package names for type definitions which match package name(s).
 
 ```
-USAGE
-  $ tpm help [COMMAND]
-
-ARGUMENTS
-  COMMAND  command to show help for
-
-OPTIONS
-  --all  see all commands in CLI
+$ tpm lookup cuid cors
+@types/cuid  @types/cors
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
-<!-- commandsstop -->
+_See code: [src/commands/lookup.ts](https://github.com/tEErohr/tpm/blob/v1.0.0/src/commands/lookup.ts)_
+

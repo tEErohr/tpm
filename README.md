@@ -13,7 +13,10 @@ npm cli wrapper to auto-install typings with packages
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g tpm
+$ git clone https://github.com/tEErohr/tpm.git
+$ cd tpm
+$ npm install
+$ npm link
 $ tpm COMMAND
 running command...
 $ tpm (-v|--version|version)
